@@ -26,7 +26,7 @@ function App() {
       if (consultar) {
         const appId = '9ab615c8f5d1f82ccf1a4c481b1ce268';
 
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad},${pais}&appid=${appId}`;
 
         const respuesta = await fetch(url); //Fetch para no instalar nada
         const resultado = await respuesta.json();
